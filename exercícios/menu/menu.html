@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>MENU - T29</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <script src="js/MenuController.js"></script>
+  </head>
+
+  <body>
+    <div class="menu">
+      <h1>MENU</h1>
+      <div class="opcoes-menu">
+        <div>[1] - Exibir os números ímpares de 0 a 100</div>
+        <div>[2] - Encontrar o nome secreto</div>
+        <div>[3] - Ocorrências do número 1 no intervalo</div>
+        <div>[4] - Sair</div>
+      </div>
+
+      <div class="entrada-menu">
+        <div>
+          <input
+            type="number"
+            placeholder="Digite a opção..."
+            id="menu-opcao"
+          />
+        </div>
+        <div>
+          <button type="button" onclick="controller.selecionarMenu()">
+            Selecionar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="opcao" id="opcao1">
+      <div>
+        <span id="resultadoOP1"></span>
+      </div>
+      <div>
+        <button type="button" onclick="controller.voltarMenu('opcao1')">
+          Voltar
+        </button>
+      </div>
+    </div>
+
+    <div class="opcao" id="opcao2">
+      <h2>Tente descobrir o nome secreto</h2>
+      <div>
+        <label for="inputOP2">Nome:</label>
+        <input type="text" id="inputOP2" />
+      </div>
+      <div>
+        <button type="button" onclick="controller.executarOP2()">
+          Adicionar
+        </button>
+        <button type="button" onclick="controller.voltarMenu('opcao2')">
+          Voltar
+        </button>
+      </div>
+
+      <div>
+        <label for="qtdTentativas">Qtd. Tentativas: </label>
+        <span id="qtdTentativas"></span>
+      </div>
+      <div>
+        <label for="tentativas">Tentativas: </label>
+        <span id="tentativas"></span>
+      </div>
+    </div>
+
+    <div class="opcao" id="opcao3">
+      <div>
+        <label for="inputOP3">Digite o valor do limite:</label>
+        <input type="number" id="inputOP3" />
+      </div>
+      <div>
+        <button type="button" onclick="controller.executarOP3()">Exibir</button>
+        <button type="button" onclick="controller.voltarMenu('opcao3')">
+          Voltar
+        </button>
+      </div>
+      <div>
+        <label for="resultadoOP3Qtd">Qtd: </label>
+        <span id="resultadoOP3Qtd"></span>
+        <label for="resultadoOP3">Valores: </label>
+        <span id="resultadoOP3"></span>
+      </div>
+    </div>
+  </body>
+</html>

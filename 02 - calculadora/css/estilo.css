@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+.card {
+  width: 40%;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  margin: 150px auto;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.titulo {
+  font-weight: 100;
+}
+
+.espaco {
+  margin: 25px 0px;
+}
+
+.botao {
+  background-color: white;
+  padding: 10px;
+  color: blue;
+  border: none;
+  font-weight: 800;
+  border-radius: 5px;
+  cursor: pointer;
+}

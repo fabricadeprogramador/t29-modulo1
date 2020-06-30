@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Cliente</title>
+    <script src="js/script.js"></script>
+    <script src="js/ClienteController.js"></script>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body id="corpo">
+    <nav id="menu">
+      <img src="img/close.svg" alt="Fechar Menu" onclick="fecharMenu()" />
+      <h2>Menu</h2>
+      <ul>
+        <a href="">
+          <li>Usuário</li>
+        </a>
+        <a href="">
+          <li>Cliente</li>
+        </a>
+        <a href="">
+          <li>Professor</li>
+        </a>
+        <a href="">
+          <li>Curso</li>
+        </a>
+        <a href="">
+          <li>Sair</li>
+        </a>
+      </ul>
+    </nav>
+
+    <main id="principal">
+      <div id="mensagens" class="mensagens">
+        <img
+          src="img/close.svg"
+          alt="Fechar mensagens"
+          onclick="fecharMensagens()"
+        />
+        <span id="mensagem"></span>
+      </div>
+
+      <img src="img/menu.svg" alt="Menu" onclick="abrirMenu()" />
+
+      <h1>Cadastro de Cliente</h1>
+
+      <form>
+        <div>
+          <input type="text" placeholder="Nome" id="nome" />
+        </div>
+
+        <div>
+          <input type="email" id="email" placeholder="E-mail" />
+        </div>
+
+        <div>
+          <label>Sexo:</label>
+
+          <label for="masc">Masculino</label>
+          <input type="radio" name="sexo" id="masc" value="M" />
+
+          <label for="fem">Feminino</label>
+          <input type="radio" name="sexo" id="fem" value="F" />
+        </div>
+
+        <fieldset>
+          <legend>Cursos de Interesse</legend>
+
+          <div>
+            <input type="checkbox" name="cursos" id="web" value="Web" />
+            <label for="web">Curso de desenvolvimento web</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="cursos" id="mobile" value="Mobile" />
+            <label for="mobile">Curso de desenvolvimento mobile</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="cursos" id="desktop" value="Desktop" />
+            <label for="desktop">Curso de desenvolvimento desktop</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label>Estado:</label>
+          <select name="estado" id="estado">
+            <option value="">Selecione...</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="SP">São Paulo</option>
+          </select>
+        </div>
+
+        <div>
+          <input type="text" placeholder="Cidade" id="cidade" />
+        </div>
+
+        <div class="alinhar-centro" id="divCentro">
+          <button type="button" onclick="controller.salvar()">Salvar</button>
+        </div>
+      </form>
+
+      <div>
+        <table class="tabela-clientes">
+          <thead>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Sexo</th>
+            <th>Cursos de Interesse</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th></th>
+            <th></th>
+          </thead>
+          <tbody id="tabela"></tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <script src="js/LoginController.js"></script>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <div class="card">
+      <img src="img/user.svg" alt="Login" />
+      <h1>Log-in</h1>
+
+      <div>
+        <input type="text" placeholder="Username" id="username" />
+      </div>
+
+      <div>
+        <input type="password" placeholder="Password" id="senha" />
+      </div>
+
+      <div>
+        <button type="button" onclick="loginController.autenticar()">
+          Login
+        </button>
+      </div>
+
+      <div class="link">
+        <a href="register.html">Register</a> |
+        <a href="forgot.html">Forgot Password</a>
+      </div>
+    </div>
+  </body>
+</html>

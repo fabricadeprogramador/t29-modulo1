@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Estacionamento - T29</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/estacionamento.css" />
+    <script src="js/EstacionamentoController.js"></script>
+  </head>
+  <body>
+    <div class="corpo">
+      <h1>Estacionamento - T29</h1>
+
+      <div class="main">
+        <div class="formulario">
+          <div class="entrada">
+            <div>
+              <label for="nome">Nome</label>
+            </div>
+            <div>
+              <input type="text" id="nome" />
+            </div>
+          </div>
+
+          <div class="entrada">
+            <div>
+              <label for="marca">Marca</label>
+            </div>
+            <div>
+              <input type="text" id="marca" />
+            </div>
+          </div>
+
+          <div class="entrada">
+            <div>
+              <label for="ano">Ano</label>
+            </div>
+            <div>
+              <input type="number" id="ano" />
+            </div>
+          </div>
+
+          <div>
+            <button type="button" onclick="controller.salvar()">Salvar</button>
+            <button type="button" onclick="controller.cancelar()">
+              Cancelar
+            </button>
+            <button type="button" onclick="controller.resultado()">
+              Resultado
+            </button>
+          </div>
+        </div>
+
+        <div class="saida">
+          <div class="lista">
+            <table id="tabela">
+              <thead>
+                <th>Nome</th>
+                <th>Marca</th>
+                <th>Ano</th>
+                <th></th>
+                <th></th>
+              </thead>
+              <tbody id="tabela-corpo"></tbody>
+            </table>
+          </div>
+          <div class="resultado">
+            <fieldset>
+              <legend>Resultados</legend>
+              <div>
+                <label for="maisNovo">Mais Novo:</label>
+                <span id="maisNovo"></span>
+              </div>
+              <div>
+                <label for="maisVelho">Mais Velho:</label>
+                <span id="maisVelho"></span>
+              </div>
+
+              <div>
+                <label for="media">Media:</label>
+                <span id="media"></span>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

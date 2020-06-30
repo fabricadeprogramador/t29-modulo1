@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Lista de Convidados</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/lista.css" />
+    <script src="js/lista.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Adicionar Convidado</h2>
+
+      <div>
+        <input type="text" placeholder="Nome do Convidado" id="nomeConvidado" />
+      </div>
+
+      <div>
+        <input type="number" placeholder="Idade" id="idadeConvidado" />
+      </div>
+
+      <div class="sexo">
+        <label for="masc">Masculino:</label>
+        <input type="radio" id="masc" name="sexo" value="M" />
+        <label for="fem">Feminino:</label>
+        <input type="radio" id="fem" name="sexo" value="F" />
+      </div>
+
+      <div class="acoes">
+        <button type="button" onclick="gerenciador.salvar()">
+          Salvar
+        </button>
+        <button type="button" onclick="gerenciador.limpar()">
+          Cancelar
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Lista de Convidados</h2>
+      <table class="tabela-convidados">
+        <thead>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Sexo</th>
+          <th></th>
+          <th></th>
+        </thead>
+        <tbody id="tabela"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

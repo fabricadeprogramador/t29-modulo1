@@ -1,0 +1,28 @@
+<html>
+  <script>
+    function divisao(n1, n2, sucesso, erro) {
+      if (n2 != 0) {
+        let resultado = n1 / n2;
+        sucesso(resultado);
+      } else {
+        erro();
+      }
+    }
+
+    function sucesso(resultado) {
+      alert("O resultado da divisão é: " + resultado);
+    }
+
+    function somaDois(resultado) {
+      alert("O resultado da divisão, somado com 2 é: " + (resultado + 2));
+    }
+
+    function erro() {
+      alert("Valor do divisor não pode ser zero!");
+    }
+
+    divisao(10, 5, sucesso, erro);
+    divisao(10, 0, sucesso, erro);
+    divisao(10, 5, somaDois, erro);
+  </script>
+</html>

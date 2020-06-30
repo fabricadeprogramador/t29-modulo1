@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+}
+
+img {
+  cursor: pointer;
+  width: 20px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.principal {
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+}
+
+.principal h1 {
+  text-align: center;
+}
+
+.entradaDados {
+  padding: 20px;
+}
+
+.entradaDados input {
+  width: 90%;
+}
+
+.tabela {
+  width: 100%;
+}
+
+.tabela td {
+  padding: 0px 5px;
+}
+
+.lista {
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+}

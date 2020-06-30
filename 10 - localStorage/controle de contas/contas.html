@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Cliente</title>
+    <script src="js/ContaController.js"></script>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body onload="contaController.inicializarLocalStorage()">
+    <nav id="menu">
+      <img src="img/close.svg" alt="Fechar Menu" onclick="fecharMenu()" />
+      <h2>Menu</h2>
+      <ul>
+        <a href="empresas.html">
+          <li>Empresas</li>
+        </a>
+        <a href="contas.html">
+          <li>Contas</li>
+        </a>
+      </ul>
+    </nav>
+
+    <main id="principal">
+      <div id="mensagens" class="mensagens">
+        <img src="img/close.svg" alt="Fechar mensagens" />
+        <span id="mensagem"></span>
+      </div>
+
+      <img src="img/menu.svg" alt="Menu" onclick="abrirMenu()" />
+
+      <h1>Cadastro de Conta</h1>
+
+      <form>
+        <div>
+          <input type="number" placeholder="Valor" id="valor" />
+        </div>
+
+         <div>
+           <label for="tipo">Tipo:</label></label>
+          <select name="tipo" id="tipo">
+            <option value="Receita">Receita</option>
+            <option value="Despesa">Despesa</option>
+          </select>
+        </div>
+
+        <div>
+          <input type="checkbox" name="paga" id="paga">
+          <label for="paga">Paga?</label>
+        </div>
+
+        <div>
+          <label for="receptor">Receptor:</label></label>
+          <select name="receptor" id="receptor">
+           
+          </select>
+        </div>
+       
+        <div class="alinhar-centro" id="divCentro">
+          <button type="button" onclick="contaController.salvar()">
+            Salvar
+          </button>
+
+          <button type="button" onclick="contaController.limpar()">
+            Cancelar
+          </button>
+        </div>
+      </form>
+
+      <div>
+        <table class="tabela">
+          <thead>
+            <th>Valor</th>
+            <th>Tipo</th>
+            <th>Paga?</th>
+            <th>Receptor</th>
+            <th></th>
+            <th></th>
+          </thead>
+          <tbody id="tabela"></tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

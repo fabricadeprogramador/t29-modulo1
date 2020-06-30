@@ -1,0 +1,151 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+img {
+  width: 30px;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0px;
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(9, 163, 198);
+  float: left;
+  width: 30%;
+  height: 100%;
+  padding: 20px 0px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  box-shadow: 5px 0px 10px gray;
+  overflow: hidden;
+  transition: width 0.8s;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  padding: 10px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li:hover {
+  background-color: rgb(13, 101, 121);
+}
+
+main {
+  width: 70%;
+  float: right;
+  padding: 40px;
+  box-sizing: border-box;
+  transition: width 0.8s;
+}
+
+form {
+  width: 70%;
+  margin: auto;
+}
+
+form div {
+  margin: 20px 0px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+}
+
+form button {
+  background-color: rgb(9, 163, 198);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+
+form button:hover {
+  background-color: rgb(13, 101, 121);
+  cursor: pointer;
+}
+
+.alinhar-centro {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: 0%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .main-aberto {
+    width: 70%;
+  }
+}
+
+@keyframes slide-message {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -50px, 0px);
+  }
+
+  to {
+    opacity: 0.8;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+.mensagens {
+  display: none;
+  background-color: red;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  width: 60%;
+  opacity: 0.8;
+  animation: slide-message 1s;
+}
+
+.mensagens.show {
+  display: block;
+}
+
+.mensagens img {
+  width: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+.menu-aberto {
+  width: 30%;
+}
+
+.menu-fechado {
+  width: 0%;
+}
+
+.main-aberto {
+  width: 100%;
+}
+
+.main-fechado {
+  width: 70%;
+}

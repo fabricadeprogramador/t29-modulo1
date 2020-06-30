@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Fábrica de Programador</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/Calculadora.js"></script>
+  </head>
+
+  <body>
+    <div class="card">
+      <h1 class="titulo">Calculadora High Tech</h1>
+
+      <div class="espaco">
+        <label for="numero1">Número 1</label>
+        <input type="number" id="numero1" />
+      </div>
+
+      <div class="espaco">
+        <label for="numero2">Número 2</label>
+        <input type="number" id="numero2" />
+      </div>
+
+      <div class="espaco">
+        <button type="button" class="botao" onclick="calc.somar()">+</button>
+        <button type="button" class="botao" onclick="calc.subtrair()">-</button>
+        <button type="button" class="botao" onclick="calc.multiplicar()">
+          *
+        </button>
+        <button type="button" class="botao" onclick="calc.dividir()">/</button>
+      </div>
+    </div>
+  </body>
+</html>

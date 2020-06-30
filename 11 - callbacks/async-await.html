@@ -1,0 +1,31 @@
+<html>
+  <script>
+    function divisao(n1, n2) {
+      return new Promise(function (resolve, reject) {
+        let resultado = n1 / n2;
+
+        if (n2 != 0) {
+          resolve(resultado);
+        } else {
+          reject("Indeterminação!");
+        }
+      });
+    }
+
+    function calcularJuros(valor) {
+      return valor + valor * 0.1;
+    }
+
+    function imprimir(msg) {
+      alert(msg);
+    }
+
+    async function calcular() {
+      let resposta = await divisao(100, 0).catch(imprimir);
+      let juros = calcularJuros(resposta);
+      imprimir(juros);
+    }
+
+    calcular();
+  </script>
+</html>

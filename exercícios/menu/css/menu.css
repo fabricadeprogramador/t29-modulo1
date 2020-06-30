@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+}
+
+.menu {
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  background-color: lightgray;
+  margin-top: 30px;
+  box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.5);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.opcoes-menu {
+  text-align: left;
+  margin: 0px 10px;
+}
+
+.entrada-menu input {
+  width: 95%;
+  margin: 10px 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: lightgray;
+}
+
+.entrada-menu button {
+  padding: 8px;
+  border: none;
+  background-color: gray;
+  color: white;
+  border-radius: 15px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.opcao {
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  display: none;
+  text-align: center;
+}
+
+.opcao.exibir-resultado {
+  display: block;
+}
+
+.opcao button {
+  padding: 9px;
+  border: none;
+  background-color: gray;
+  color: white;
+  border-radius: 15px;
+  margin: 10px 0px;
+  cursor: pointer;
+}

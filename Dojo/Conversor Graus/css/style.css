@@ -1,0 +1,9 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+.botao {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+}

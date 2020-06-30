@@ -1,0 +1,40 @@
+<html>
+  <script>
+    function divisao(n1, n2) {
+      return new Promise(function (resolve, reject) {
+        if (n2 != 0) {
+          let resultado = n1 / n2;
+          resolve(resultado);
+        } else {
+          reject();
+        }
+      });
+    }
+
+    function sucesso(resultado) {
+      return new Promise(function (resolve, reject) {
+        alert("O resultado da divisão é: " + resultado);
+        resolve(resultado);
+      });
+    }
+
+    function somaDois(resultado) {
+      alert("O resultado da divisão, somado com 2 é: " + (resultado + 2));
+    }
+
+    function erro() {
+      alert("Valor do divisor não pode ser zero!");
+    }
+
+    divisao(10, 0).then(sucesso).then(somaDois).catch(erro);
+
+    //Execução com funções implícitas
+    // divisao(1000, 10)
+    //   .then((res) => {
+    //     alert("10% de" + res + " é: " + res * 0.1);
+    //   })
+    //   .catch(() => {
+    //     alert("Valor do divisor não pode ser zero!");
+    //   });
+  </script>
+</html>

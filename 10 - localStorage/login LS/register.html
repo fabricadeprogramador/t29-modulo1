@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Register</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/GerenciadorCadastro.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <img src="img/user.svg" alt="Icone Person" />
+
+      <h1>Register</h1>
+
+      <div>
+        <input type="text" placeholder="Name" id="nome" />
+      </div>
+
+      <div>
+        <input type="text" placeholder="Username" id="username" />
+      </div>
+
+      <div>
+        <input type="password" placeholder="Password" id="password" />
+      </div>
+
+      <div>
+        <button type="button" onclick="gerenciadorCadastro.salvar()">
+          Save
+        </button>
+      </div>
+
+      <div class="link">
+        <a href="login.html">Back</a>
+      </div>
+    </div>
+  </body>
+</html>

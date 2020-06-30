@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Cliente</title>
+    <script src="js/EmpresaController.js"></script>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body onload="empresaController.inicializarLocalStorage()">
+    <nav id="menu">
+      <img src="img/close.svg" alt="Fechar Menu" onclick="fecharMenu()" />
+      <h2>Menu</h2>
+      <ul>
+        <a href="empresas.html">
+          <li>Empresas</li>
+        </a>
+        <a href="contas.html">
+          <li>Contas</li>
+        </a>
+      </ul>
+    </nav>
+
+    <main id="principal">
+      <div id="mensagens" class="mensagens">
+        <img src="img/close.svg" alt="Fechar mensagens" />
+        <span id="mensagem"></span>
+      </div>
+
+      <img src="img/menu.svg" alt="Menu" onclick="abrirMenu()" />
+
+      <h1>Cadastro de Empresa</h1>
+
+      <form>
+        <div>
+          <input type="text" placeholder="Nome" id="nome" />
+        </div>
+
+        <div>
+          <input type="text" placeholder="Endereço" id="endereco" />
+        </div>
+
+        <div>
+          <input type="number" placeholder="CNPJ" id="cnpj" />
+        </div>
+
+        <div>
+          <input type="text" placeholder="Razão Social" id="razaoSocial" />
+        </div>
+
+        <div class="alinhar-centro" id="divCentro">
+          <button type="button" onclick="empresaController.salvar()">
+            Salvar
+          </button>
+
+          <button type="button" onclick="empresaController.limpar()">
+            Cancelar
+          </button>
+        </div>
+      </form>
+
+      <div>
+        <table class="tabela">
+          <thead>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>CNPJ</th>
+            <th>Razão Social</th>
+            <th></th>
+            <th></th>
+          </thead>
+          <tbody id="tabela"></tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

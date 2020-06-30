@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  background-image: url(https://data.1freewallpapers.com/detail/black-background-red-color-paint-explosion-burst.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+img {
+  width: 200px;
+}
+
+.card {
+  width: 40%;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.card input {
+  padding: 10px;
+  width: 100%;
+  margin: 5px;
+  border: 1px solid gray;
+}
+
+.card h1 {
+  color: gray;
+  font-weight: 100;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  background-color: blue;
+  color: white;
+  font-size: 12pt;
+  font-weight: 800;
+}
+
+.card a {
+  color: gray;
+  text-decoration: none;
+}
+
+.link {
+  margin: 10px 0px;
+}

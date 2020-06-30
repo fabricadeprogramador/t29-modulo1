@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Controladora de Pedidos</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/pedidos.css" />
+    <script src="js/PedidosController.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Calculadora Pedido de Camisetas</h1>
+
+      <div class="inputComLabel">
+        <div>
+          <label for="qtdP">Quantidade P (R$ 10,00)</label>
+        </div>
+        <div>
+          <input type="number" id="qtdP" />
+        </div>
+      </div>
+
+      <div class="inputComLabel">
+        <div>
+          <label for="qtdM">Quantidade M (R$ 12,00)</label>
+        </div>
+
+        <div>
+          <input type="number" id="qtdM" />
+        </div>
+      </div>
+
+      <div class="inputComLabel">
+        <div>
+          <label for="qtdG">Quantidade G (R$ 15,00)</label>
+        </div>
+
+        <div>
+          <input type="number" id="qtdG" />
+        </div>
+      </div>
+
+      <div class="divBotao">
+        <button type="button" onclick="controller.salvar()">
+          Salvar Pedido
+        </button>
+      </div>
+    </div>
+
+    <div class="divTabela">
+      <table class="tabela">
+        <thead>
+          <th>P</th>
+          <th>M</th>
+          <th>G</th>
+          <th>Total</th>
+          <th></th>
+          <th></th>
+        </thead>
+        <tbody id="tabela"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
